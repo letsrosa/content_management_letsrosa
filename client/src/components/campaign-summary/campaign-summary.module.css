@@ -1,0 +1,67 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  padding: 16px 24px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+
+.label {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.value {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.valueInk {
+  color: var(--ink);
+}
+
+.valueTech {
+  color: var(--tech);
+}
+
+.valueBoth {
+  color: var(--both);
+}
+
+.valueLife {
+  color: var(--life);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 360px) {
+  .grid {
+    padding: 12px 16px 0;
+  }
+
+  .value {
+    font-size: 22px;
+  }
+}

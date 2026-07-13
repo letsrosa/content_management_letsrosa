@@ -1,0 +1,183 @@
+.log {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 8px 24px 48px;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  padding-bottom: 24px;
+}
+
+.item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 20px;
+  bottom: -4px;
+  width: 2px;
+  background: var(--line);
+}
+
+.node {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 6px;
+  border-radius: 50%;
+  border: 3px solid var(--surface);
+  box-shadow: 0 0 0 2px var(--line);
+}
+
+.nodeTech {
+  background: var(--tech);
+}
+
+.nodeLife {
+  background: var(--life);
+}
+
+.nodeBoth {
+  background: var(--both);
+}
+
+.card {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.title {
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+.hash {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.metaRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--muted);
+}
+
+.tagTech {
+  background: var(--tech-soft);
+  color: var(--tech);
+}
+
+.tagLife {
+  background: var(--life-soft);
+  color: var(--life);
+}
+
+.tagBoth {
+  background: var(--both-soft);
+  color: var(--both);
+}
+
+.scheduledDate {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.notes {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  white-space: pre-wrap;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.statusSelect {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.statusSelect:focus-visible {
+  outline: 2px solid var(--tech);
+  outline-offset: 2px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.iconButton {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.iconButton:hover {
+  background: var(--bg);
+}
+
+.iconButton:focus-visible {
+  outline: 2px solid var(--tech);
+  outline-offset: 2px;
+}
+
+@media (max-width: 360px) {
+  .log {
+    padding: 8px 16px 32px;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions {
+    justify-content: flex-end;
+  }
+}

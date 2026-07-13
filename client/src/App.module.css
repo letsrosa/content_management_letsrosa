@@ -1,0 +1,43 @@
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mainWide {
+  flex: 1;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.statusMessage {
+  padding: 16px 24px;
+  color: var(--muted);
+}
+
+.pageToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 24px 0;
+}
+
+.pageTitle {
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+@media (max-width: 360px) {
+  .pageToolbar {
+    padding: 16px 16px 0;
+  }
+}

@@ -1,0 +1,83 @@
+.filtersRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 16px 24px;
+}
+
+.chip {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.chip:focus-visible {
+  outline: 2px solid var(--tech);
+  outline-offset: 2px;
+}
+
+.chipActiveTech {
+  background: var(--tech-soft);
+  color: var(--tech);
+  border-color: var(--tech);
+}
+
+.chipActiveLife {
+  background: var(--life-soft);
+  color: var(--life);
+  border-color: var(--life);
+}
+
+.chipActiveBoth {
+  background: var(--both-soft);
+  color: var(--both);
+  border-color: var(--both);
+}
+
+.chipActiveNeutral {
+  background: var(--tech-soft);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  padding: 0 24px 16px;
+  overflow-x: auto;
+}
+
+.tab {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab:focus-visible {
+  outline: 2px solid var(--tech);
+  outline-offset: 2px;
+}
+
+.tabActive {
+  background: var(--ink);
+  color: #ffffff;
+}
+
+@media (max-width: 360px) {
+  .filtersRow,
+  .tabs {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

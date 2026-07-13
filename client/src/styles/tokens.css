@@ -1,0 +1,36 @@
+:root {
+  --bg: #f6f3fa;
+  --surface: #ffffff;
+  --ink: #241f33;
+  --muted: #6b637f;
+  --line: #e4def0;
+  --tech: #7b61ff;
+  --tech-soft: #efebff;
+  --life: #ff7a59;
+  --life-soft: #ffeee8;
+  --both: #1f9c82;
+  --both-soft: #e4f6f1;
+  --radius: 16px;
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* status de campanha (página Publicidade) */
+  --status-negotiating: #6b637f;
+  --status-negotiating-soft: #edebf2;
+  --status-confirmed: #1f9c82;
+  --status-confirmed-soft: #e4f6f1;
+  --status-in-progress: #c98a1f;
+  --status-in-progress-soft: #fbf0dc;
+  --status-completed: #1f9c82;
+  --status-completed-soft: #e4f6f1;
+
+  /* status de pagamento */
+  --payment-pending: #c98a1f;
+  --payment-pending-soft: #fbf0dc;
+  --payment-paid: #1f9c82;
+  --payment-paid-soft: #e4f6f1;
+  --payment-overdue: #e0453c;
+  --payment-overdue-soft: #fce6e4;
+}
